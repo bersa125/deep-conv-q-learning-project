@@ -28,7 +28,7 @@ USE_CUDA=torch.cuda.is_available() # change to False only if CUDA is available b
 
 #Enviroment configuration:
 #-To be always set
-ENV_SELECTED = SUPER_MARIO
+ENV_SELECTED = ATARI_CENTIPEDE
 EPOCHS = 100
 MOVE_SET=2  # mario = 0-2 ; doom = 0-3 ; otherwise isn't important
 GOAL_SCORE = 32000
