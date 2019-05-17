@@ -12,3 +12,10 @@ In case you want to use Dump/Restore function in memory:
 ```shell
 pip install superjson
 ```
+### Remember also
+to set in configuration_parameters.py :
+```shell
+PLOT_CREATION=False
+RENDER=False
+```
+to avoid problems since rendering on colab isn't admitted (creation of the plot takes place silently and in an autonomous way).
