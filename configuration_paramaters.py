@@ -30,15 +30,15 @@ USE_CUDA=torch.cuda.is_available() # change to False only if CUDA is available b
 #-To be always set
 ENV_SELECTED = ATARI_CENTIPEDE
 EPOCHS = 100
-MOVE_SET=2  # mario = 0-2 ; doom = 0-3 ; otherwise isn't important
+MOVE_SET = 0  # mario = 0-2 ; doom = 0-3 ; otherwise isn't important
 GOAL_SCORE = 32000
 #-To be set only if PARAMETER_SELECTION is True
 BATCH_SIZE = 256
 NUMBER_OF_PHOTOGRAMS= 200
 LEARNING_RATE = 0.0001
-FRAME_SKIP=4
-NSTEP_EVALUATION=10
-MEMORY_CAPACITY=10000
+FRAME_SKIP = 4
+NSTEP_EVALUATION = 10
+MEMORY_CAPACITY = 10000
 image_dim = (GRAYSCALE, 84, 84)
 #-To be set only if PARAMETER_SELECTION is False
 #   Autotuning Options:
