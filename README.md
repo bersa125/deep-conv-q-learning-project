@@ -62,7 +62,7 @@ Remember to set in configuration_parameters.py :
 PLOT_CREATION=False
 RENDER=False
 ```
-to avoid problems as rendering on isn't admitted (creation of the plot takes place silently and in an autonomous way).
+to avoid problems as rendering isn't admitted (creation of the plot takes place silently and in an autonomous way).
 
 # Authors
 
