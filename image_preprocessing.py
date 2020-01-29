@@ -2,7 +2,8 @@
 
 # Importing the libraries
 import numpy as np
-from scipy.misc import imresize
+#from scipy.misc import imresize
+from PIL import Image
 from gym.core import ObservationWrapper
 from gym.spaces.box import Box
 
@@ -20,7 +21,9 @@ class ImageProcessing(ObservationWrapper):
 
     def _observation(self, img):
         img = self.crop(img)
-        img = imresize(img, self.img_size)
+	#imresize deprecated and so use Pillow
+        #img = imresize(img, self.img_size)
+        img = np.array(Image.fromarray(img).resize(self.img_size))
         if self.grayscale:
             img = img.mean(-1, keepdims = True)
         img = np.transpose(img, (2, 0, 1))
