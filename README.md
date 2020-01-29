@@ -19,13 +19,13 @@ pip install numpy
 pip install pytorch
 pip install superjson
 ```
-The following software have also to be installed on your environment: 
-⋅⋅* boost, 
-⋅⋅* boost-python, 
-⋅⋅* torch, 
-⋅⋅* torchvision, 
-⋅⋅* cudatoolkit, 
-⋅⋅* cudann. 
+The following software have also to be installed on your environment:
+* boost, 
+* boost-python, 
+* torch, 
+* torchvision, 
+* cudatoolkit, 
+* cudann. 
 
 ## Atari games:
 ```shell
